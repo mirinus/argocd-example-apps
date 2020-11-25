@@ -11,4 +11,3 @@ spec:
       - backend:
           serviceName: kustomize-guestbook-ui
           servicePort: 80
-        path: /
