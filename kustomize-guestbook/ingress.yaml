@@ -1,0 +1,13 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  namespace: guestbook
+spec:
+  rules:
+  - host: smd-app.example.local
+    http:
+      paths:
+      - backend:
+          serviceName: kustomize-guestbook-ui
+          servicePort: 80
+        path: /
